@@ -166,6 +166,6 @@ polarHistogram <-function (df, family = NULL, columnNames = NULL, binSize = 1,
   p <- p + xlim(0, tail(df$xmin + binSize + spaceFamily, 1)/circleProportion)
   p <- p + ylim(0, outerRadius + 0.2)
   p <- p + coord_polar(start = alphaStart)
-  p <- p + scale_fill_brewer(palette = "Set1", type = "qual")
+  p <- p + scale_fill_brewer(palette = "Set3", type = "qual")
   p
 }
